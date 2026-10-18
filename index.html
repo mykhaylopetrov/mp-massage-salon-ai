@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA — студія масажу в Києві | Класичний, SPA, реабілітаційний масаж</title>
+  <meta name="description" content="AURA — сучасна студія масажу в Києві. Класичний, спортивний, антицелюлітний, лімфодренажний, тайський та SPA-ритуали. Досвідчені майстри, онлайн-запис, подарункові сертифікати.">
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+  <link rel="preload" href="assets/fonts/fonts.css" as="style">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <noscript><style>#revTrack{flex-wrap:wrap}#revTrack .review{flex:1 1 300px}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до контенту</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Київ, вул. Затишна, 12 · щодня 9:00–21:00
+      </span>
+      <span class="topbar__item topbar__right">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.25a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9Z"/></svg>
+        <a href="tel:+380442345678">+38 (044) 234-56-78</a>
+        <span class="dot"></span>
+        <a href="#booking" class="topbar__link">Онлайн-запис</a>
+      </span>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="logo" aria-label="AURA — на головну">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="38" height="38"><rect width="64" height="64" rx="20" fill="#4E4237"/><g fill="none" stroke="#F7EFE3" stroke-width="2.5" stroke-linecap="round"><path d="M32 12c-6 8-14 12-14 22a14 14 0 0 0 28 0c0-10-8-14-14-22Z"/><path d="M32 22v18M25 30c2 2 4 3 7 3s5-1 7-3"/></g><circle cx="32" cy="46" r="2.5" fill="#D3A184"/></svg>
+        </span>
+        <span class="logo__text">AURA<small>студія масажу</small></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Головна навігація">
+        <a href="#services" class="nav__link">Послуги</a>
+        <a href="#about" class="nav__link">Про нас</a>
+        <a href="#masters" class="nav__link">Майстри</a>
+        <a href="#pricing" class="nav__link">Ціни</a>
+        <a href="#reviews" class="nav__link">Відгуки</a>
+        <a href="#faq" class="nav__link">Питання</a>
+        <a href="#contacts" class="nav__link">Контакти</a>
+      </nav>
+      <div class="header__actions">
+        <a class="btn btn--small btn--dark" href="#booking" data-open-booking>Записатися</a>
+        <button class="burger" id="burger" aria-label="Відкрити меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow reveal"><span class="eyebrow__dot"></span> Студія масажу · Київ · з 2014 року</p>
+          <h1 class="hero__title reveal">Тіло відновлюється.<br><em>Розум заспокоюється.</em></h1>
+          <p class="hero__sub reveal">Класичний, спортивний, лімфодренажний та SPA-масаж. 12 майстрів, 480+ гостей щомісяця, стерильність рівня клініки.</p>
+          <div class="hero__cta reveal">
+            <a href="#booking" class="btn btn--primary" data-open-booking>Обрати масаж — від 650 ₴</a>
+            <a href="#services" class="btn btn--ghost">Дивитись послуги</a>
+          </div>
+          <p class="hero__status reveal"><span class="status-dot" aria-hidden="true"></span>Сьогодні вільно — <strong id="freeSlots">6 віконець</strong></p>
+          <dl class="hero__stats reveal">
+            <div><dt>11 років</dt><dd>досвіду студії</dd></div>
+            <div><dt><span data-counter="18">0</span>+</dt><dd>видів масажу</dd></div>
+            <div><dt><span data-counter="4.9" data-decimals="1">0</span> ★</dt><dd>рейтинг з 1200+ відгуків</dd></div>
+          </dl>
+          <p class="hero__note reveal">Перший візит — <strong>−20%</strong> за промокодом <button class="promo" id="promoCopy" title="Натисніть, щоб скопіювати">AURA20</button></p>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__card">
+            <div class="hero__photo">
+              <img src="assets/img/hero-massage.jpg" alt="SPA-масаж гарячим камінням у студії AURA" width="800" height="1000" fetchpriority="high">
+              <div class="hero__badge hero__badge--bottom">
+                <div class="avatars" aria-hidden="true">
+                  <img src="assets/img/master-olena.jpg" alt="" width="64" height="64" loading="lazy">
+                  <img src="assets/img/master-maksym.jpg" alt="" width="64" height="64" loading="lazy">
+                  <img src="assets/img/master-diana.jpg" alt="" width="64" height="64" loading="lazy">
+                </div>
+                <div><strong>12 майстрів</strong><span>сертифіковані · мед. освіта</span></div>
+              </div>
+            </div>
+            <div class="hero__mini">
+              <div class="mini-card"><strong>60–90 хв</strong><span>класичний сеанс</span></div>
+              <div class="mini-card"><strong>100% олії</strong><span>натуральні, гіпоалергенні</span></div>
+              <div class="mini-card"><strong>Без болю</strong><span>адаптуємо тиск</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span></span>гортайте</div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Класичний масаж</span><i>✦</i><span>Лімфодренажний</span><i>✦</i><span>Антицелюлітний</span><i>✦</i><span>Тайський</span><i>✦</i><span>Стоун-терапія</span><i>✦</i><span>Масаж обличчя</span><i>✦</i><span>Спортивний</span><i>✦</i><span>SPA-ритуали для двох</span><i>✦</i>
+        <span>Класичний масаж</span><i>✦</i><span>Лімфодренажний</span><i>✦</i><span>Антицелюлітний</span><i>✦</i><span>Тайський</span><i>✦</i><span>Стоун-терапія</span><i>✦</i><span>Масаж обличчя</span><i>✦</i><span>Спортивний</span><i>✦</i><span>SPA-ритуали для двох</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- BENEFITS -->
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Чому AURA</p>
+          <h2>Салон, куди повертаються <em>тілом і душею</em></h2>
+          <p>Ми поєднали медичний підхід, SPA-естетику та сервіс готелю: тихо, тепло, чисто і завжди вчасно.</p>
+        </div>
+        <div class="grid grid--4">
+          <article class="card benefit reveal">
+            <div class="benefit__icon">◍</div>
+            <h3>Медична експертиза</h3>
+            <p>Майстри з медичною освітою. Перед першим сеансом — безкоштовна 10-хв консультація та карта здоров’я.</p>
+          </article>
+          <article class="card benefit reveal">
+            <div class="benefit__icon">◎</div>
+            <h3>Стерильність клініки</h3>
+            <p>Одноразові простирадла, крафт-упаковка інструментів, кварцування кабінетів після кожного гостя.</p>
+          </article>
+          <article class="card benefit reveal">
+            <div class="benefit__icon">✦</div>
+            <h3>Тиша і приватність</h3>
+            <p>Окремі кабінети 18 м², шумоізоляція, душ у номері, авторський плейлист і аромадизайн.</p>
+          </article>
+          <article class="card benefit reveal">
+            <div class="benefit__icon">⬣</div>
+            <h3>Чесні ціни</h3>
+            <p>Фіксований прайс на сайті. Жодних доплат «за олію» чи «за рушник». Абонементи −15%.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section section--tint" id="services">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div>
+            <p class="eyebrow">Послуги</p>
+            <h2>18 технік — <em>підберіть свою</em></h2>
+          </div>
+          <div class="filter" role="tablist" aria-label="Фільтр послуг">
+            <button class="filter__btn is-active" data-filter="all" role="tab" aria-selected="true">Всі</button>
+            <button class="filter__btn" data-filter="relax" role="tab" aria-selected="false">Релакс</button>
+            <button class="filter__btn" data-filter="therapy" role="tab" aria-selected="false">Лікувальні</button>
+            <button class="filter__btn" data-filter="beauty" role="tab" aria-selected="false">Краса</button>
+          </div>
+        </div>
+        <div class="grid grid--3" id="servicesGrid">
+          <article class="card service reveal" data-cat="relax therapy">
+            <div class="service__media"><img src="assets/img/gallery-massage.jpg" alt="Класичний масаж спини" width="800" height="520" loading="lazy"></div>
+            <div class="service__top"><span class="tag">Хіт</span><span class="service__time">60 / 90 хв</span></div>
+            <h3>Класичний масаж</h3>
+            <p>Спина, шия, руки та ноги. Знімає затиски, покращує сон і поставу вже після 1 сеансу.</p>
+            <div class="service__foot"><strong>від 650 ₴</strong><a href="#booking" class="link" data-service="Класичний масаж">Записатися →</a></div>
+          </article>
+          <article class="card service reveal" data-cat="therapy">
+            <div class="service__media"><img src="assets/img/gallery-spa.jpg" alt="Спортивний масаж" width="800" height="520" loading="lazy"></div>
+            <div class="service__top"><span class="tag tag--green">Спорт</span><span class="service__time">60 / 90 хв</span></div>
+            <h3>Спортивний + відновлення</h3>
+            <p>Глибока робота з м’язами, МФР, тейпування. Для бігунів, залу та офісних «спортсменів».</p>
+            <div class="service__foot"><strong>від 800 ₴</strong><a href="#booking" class="link" data-service="Спортивний масаж">Записатися →</a></div>
+          </article>
+          <article class="card service reveal" data-cat="relax">
+            <div class="service__media"><img src="assets/img/gallery-oils.jpg" alt="Арома-олії для SPA-ритуалу" width="800" height="520" loading="lazy"></div>
+            <div class="service__top"><span class="tag tag--sand">SPA</span><span class="service__time">90 / 120 хв</span></div>
+            <h3>Арома-SPA ритуал</h3>
+            <p>Теплі олії, скраб, обгортання і масаж всього тіла. Повне перезавантаження за вечір.</p>
+            <div class="service__foot"><strong>від 1 400 ₴</strong><a href="#booking" class="link" data-service="Арома-SPA ритуал">Записатися →</a></div>
+          </article>
+          <article class="card service reveal" data-cat="therapy">
+            <div class="service__top"><span class="tag tag--green">Детокс</span><span class="service__time">60 / 90 хв</span></div>
+            <h3>Лімфодренажний</h3>
+            <p>Прибирає набряки, важкість у ногах, запускає лімфу. Видимий результат курсом 5–10 сеансів.</p>
+            <div class="service__foot"><strong>від 750 ₴</strong><a href="#booking" class="link" data-service="Лімфодренажний масаж">Записатися →</a></div>
+          </article>
+          <article class="card service reveal" data-cat="beauty">
+            <div class="service__top"><span class="tag tag--rose">Краса</span><span class="service__time">45 / 60 хв</span></div>
+            <h3>Антицелюлітний курс</h3>
+            <p>Медовий, баночний + ручний. Фотофіксація прогресу, план харчування у подарунок.</p>
+            <div class="service__foot"><strong>від 700 ₴</strong><a href="#booking" class="link" data-service="Антицелюлітний масаж">Записатися →</a></div>
+          </article>
+          <article class="card service reveal" data-cat="beauty relax">
+            <div class="service__media"><img src="assets/img/gallery-face.jpg" alt="Масаж обличчя" width="800" height="520" loading="lazy"></div>
+            <div class="service__top"><span class="tag tag--rose">Обличчя</span><span class="service__time">45 / 60 хв</span></div>
+            <h3>Масаж обличчя + букальний</h3>
+            <p>Ліфтинг без ін’єкцій: чіткий овал, менше набряків, сяйво шкіри вже після першого разу.</p>
+            <div class="service__foot"><strong>від 600 ₴</strong><a href="#booking" class="link" data-service="Масаж обличчя">Записатися →</a></div>
+          </article>
+          <article class="card service reveal" data-cat="relax">
+            <div class="service__top"><span class="tag tag--sand">Схід</span><span class="service__time">90 хв</span></div>
+            <h3>Тайський традиційний</h3>
+            <p>Робота в одязі на маті: розтяжка, акупресура, скрутки. Ефект як після відпустки.</p>
+            <div class="service__foot"><strong>від 950 ₴</strong><a href="#booking" class="link" data-service="Тайський масаж">Записатися →</a></div>
+          </article>
+          <article class="card service reveal" data-cat="relax therapy">
+            <div class="service__media"><img src="assets/img/gallery-stones.jpg" alt="Стоун-терапія гарячим камінням" width="800" height="520" loading="lazy"></div>
+            <div class="service__top"><span class="tag tag--sand">Тепло</span><span class="service__time">75 хв</span></div>
+            <h3>Стоун-терапія</h3>
+            <p>Гаряче вулканічне каміння + олії. Ідеально при хронічній втомі та болю в спині.</p>
+            <div class="service__foot"><strong>від 1 100 ₴</strong><a href="#booking" class="link" data-service="Стоун-терапія">Записатися →</a></div>
+          </article>
+          <article class="card service reveal" data-cat="relax beauty">
+            <div class="service__top"><span class="tag">Для двох</span><span class="service__time">90 / 120 хв</span></div>
+            <h3>SPA для двох + джакузі</h3>
+            <p>Парний ритуал у приватному люксі: масаж, джакузі, чайна церемонія і фрукти.</p>
+            <div class="service__foot"><strong>від 2 800 ₴</strong><a href="#booking" class="link" data-service="SPA для двох">Записатися →</a></div>
+          </article>
+        </div>
+        <p class="center-note">Не знаєте, що обрати? <a href="#booking" class="link" data-open-booking>Запишіться на безкоштовну консультацію</a> — підберемо техніку за 10 хвилин.</p>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about__grid">
+        <div class="about__media reveal">
+          <div class="about__collage">
+            <figure class="about__ph about__ph--main">
+              <img src="assets/img/about-interior.jpg" alt="Інтер'єр кабінету Бамбук у студії AURA" width="900" height="1100" loading="lazy">
+              <figcaption>Кабінет «Бамбук»<small>18 м² · душ · підігрів ліжка</small></figcaption>
+            </figure>
+            <figure class="about__ph about__ph--small">
+              <img src="assets/img/about-tea.jpg" alt="Чайна зона з трав'яними зборами" width="800" height="600" loading="lazy">
+              <figcaption>Чайна зона<small>трав’яні збори Карпат</small></figcaption>
+            </figure>
+            <div class="about__ph about__ph--stat"><span class="big"><b data-counter="52000">0</b>+<small>сеансів проведено</small></span></div>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="eyebrow">Про салон</p>
+          <h2>Простір тиші <em>в центрі шуму</em></h2>
+          <p>AURA — це 320 м² спокою: 7 приватних кабінетів, парний люкс з джакузі, соляна кімната і чайна. Жодних прохідних залів — тільки ви, майстер і музика дощу.</p>
+          <ul class="checklist">
+            <li>Одноразові матеріали + стерилізація за протоколом МОЗ</li>
+            <li>Натуральні олії Styx, Aroma Inter та власна лінійка AURA Oil</li>
+            <li>Онлайн-запис за 30 секунд, нагадування в SMS/Viber</li>
+            <li>Подарункові сертифікати від 500 ₴ — паперові та e-cert</li>
+          </ul>
+          <div class="about__counters">
+            <div><strong><span data-counter="11">0</span> років</strong><span>працюємо без перерви</span></div>
+            <div><strong><span data-counter="12">0</span> майстрів</strong><span>мед. освіта і сертифікати</span></div>
+            <div><strong><span data-counter="98">0</span>%</strong><span>гостей повертаються</span></div>
+          </div>
+          <a class="btn btn--dark" href="#masters">Познайомитись з майстрами</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTERS -->
+    <section class="section section--dark" id="masters">
+      <div class="container">
+        <div class="section__head section__head--light">
+          <p class="eyebrow">Команда</p>
+          <h2>Руки, яким <em>довіряють</em></h2>
+          <p>Кожен майстер проходить 3-етапний відбір і 40 годин стажування в AURA. Оберіть свого — або довіртесь адміністратору.</p>
+        </div>
+        <div class="grid grid--4 masters">
+          <article class="master reveal">
+            <div class="master__photo"><img src="assets/img/master-olena.jpg" alt="Майстер Олена Коваль" width="600" height="700" loading="lazy"></div>
+            <h3>Олена Коваль</h3>
+            <p class="master__role">Класичний · лімфодренаж · 9 років</p>
+            <p class="master__bio">Медсестра-реабілітолог. Спеціаліст з набряків та відновлення після пологів.</p>
+            <button class="link link--light" data-master="Олена Коваль">Записатися до Олени →</button>
+          </article>
+          <article class="master reveal">
+            <div class="master__photo"><img src="assets/img/master-maksym.jpg" alt="Майстер Максим Лисенко" width="600" height="700" loading="lazy"></div>
+            <h3>Максим Лисенко</h3>
+            <p class="master__role">Спортивний · тайський · 7 років</p>
+            <p class="master__bio">Екс-масажист ФК «Динамо» U-19. Повертає до форми після травм і марафонів.</p>
+            <button class="link link--light" data-master="Максим Лисенко">Записатися до Максима →</button>
+          </article>
+          <article class="master reveal">
+            <div class="master__photo"><img src="assets/img/master-diana.jpg" alt="Майстер Діана Саєнко" width="600" height="700" loading="lazy"></div>
+            <h3>Діана Саєнко</h3>
+            <p class="master__role">Обличчя · букальний · 6 років</p>
+            <p class="master__bio">Косметолог-естетист. Авторський ліфтинг-протокол AURA Face Sculpt.</p>
+            <button class="link link--light" data-master="Діана Саєнко">Записатися до Діани →</button>
+          </article>
+          <article class="master reveal">
+            <div class="master__photo"><img src="assets/img/master-andriy.jpg" alt="Майстер Андрій Руденко" width="600" height="700" loading="lazy"></div>
+            <h3>Андрій Руденко</h3>
+            <p class="master__role">Стоун · SPA-ритуали · 10 років</p>
+            <p class="master__bio">Навчався в Таїланді та на Балі. Майстер глибокого розслаблення і парних ритуалів.</p>
+            <button class="link link--light" data-master="Андрій Руденко">Записатися до Андрія →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Прайс</p>
+          <h2>Прозорі ціни <em>без зірочок</em></h2>
+          <p>У вартість вже включені олії, рушники, чай і душ. Абонемент на 5 сеансів — <strong>−15%</strong>, на 10 — <strong>−20%</strong>.</p>
+        </div>
+        <div class="grid grid--3 pricing">
+          <article class="card price reveal">
+            <h3>Експрес-відновлення</h3>
+            <p class="price__desc">30–45 хв · шия, спина або ноги</p>
+            <ul>
+              <li><span>Масаж шийно-комірцевої зони · 30 хв</span><strong>450 ₴</strong></li>
+              <li><span>Масаж спини · 45 хв</span><strong>650 ₴</strong></li>
+              <li><span>Масаж ніг + стопи · 45 хв</span><strong>600 ₴</strong></li>
+              <li><span>Масаж обличчя експрес · 30 хв</span><strong>450 ₴</strong></li>
+            </ul>
+            <a href="#booking" class="btn btn--ghost btn--full" data-open-booking>Записатися</a>
+          </article>
+          <article class="card price price--featured reveal">
+            <p class="tag tag--center">Найчастіше обирають</p>
+            <h3>Класика та SPA · 60–90 хв</h3>
+            <p class="price__desc">Повноцінний сеанс для тіла і нервової системи</p>
+            <ul>
+              <li><span>Класичний · 60 хв</span><strong>750 ₴</strong></li>
+              <li><span>Класичний · 90 хв</span><strong>1 050 ₴</strong></li>
+              <li><span>Лімфодренажний · 60 хв</span><strong>800 ₴</strong></li>
+              <li><span>Арома-SPA · 90 хв</span><strong>1 400 ₴</strong></li>
+              <li><span>Стоун-терапія · 75 хв</span><strong>1 100 ₴</strong></li>
+            </ul>
+            <a href="#booking" class="btn btn--primary btn--full" data-open-booking>Записатися зі знижкою −20%</a>
+          </article>
+          <article class="card price reveal">
+            <h3>Курси та ритуали</h3>
+            <p class="price__desc">Максимальний ефект і вигода</p>
+            <ul>
+              <li><span>Антицелюлітний курс ×10</span><strong>5 600 ₴</strong></li>
+              <li><span>SPA для двох · 90 хв</span><strong>2 800 ₴</strong></li>
+              <li><span>День SPA «Перезавантаження» · 4 год</span><strong>3 900 ₴</strong></li>
+              <li><span>Подарунковий сертифікат</span><strong>від 500 ₴</strong></li>
+            </ul>
+            <a href="#booking" class="btn btn--ghost btn--full" data-open-booking>Отримати сертифікат</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STEPS -->
+    <section class="section section--tint" id="steps">
+      <div class="container">
+        <div class="section__head"><p class="eyebrow">Як проходить візит</p><h2>4 кроки до <em>легкості</em></h2></div>
+        <ol class="steps">
+          <li class="reveal"><span>01</span><h3>Заявка за 30 секунд</h3><p>Онлайн-форма, дзвінок або месенджер. Підтвердимо візит SMS за 2 години.</p></li>
+          <li class="reveal"><span>02</span><h3>Консультація 10 хв</h3><p>З’ясуємо запит, протипоказання, побажання щодо тиску і зон.</p></li>
+          <li class="reveal"><span>03</span><h3>Сеанс 30–120 хв</h3><p>Теплий кабінет, душ, одноразова білизна, чай після масажу.</p></li>
+          <li class="reveal"><span>04</span><h3>План турботи</h3><p>Рекомендації майстра + нагадування про наступний візит. Без нав’язування.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head section__head--split">
+          <div><p class="eyebrow">Відгуки</p><h2>1 200+ відгуків · <em>4.9 з 5</em></h2></div>
+          <div class="slider-nav">
+            <button type="button" id="revPrev" aria-label="Попередній відгук">←</button>
+            <button type="button" id="revNext" aria-label="Наступний відгук">→</button>
+          </div>
+        </div>
+        <div class="slider swiper" id="revSlider">
+          <div class="slider__track swiper-wrapper" id="revTrack">
+            <figure class="card review swiper-slide"><blockquote>«Після трьох сеансів у Олени вперше за рік заснула без знеболювального. Спина дякує, я — теж.»</blockquote><figcaption><img src="assets/img/master-olena.jpg" alt="" width="80" height="80" loading="lazy"><div><strong>Ірина, 34</strong><span>класичний курс ×5 · ★★★★★</span></div></figcaption></figure>
+            <figure class="card review swiper-slide"><blockquote>«Брав спортивний у Максима після марафону. На ранок ноги як нові. Рівень — як у збірній.»</blockquote><figcaption><img src="assets/img/master-maksym.jpg" alt="" width="80" height="80" loading="lazy"><div><strong>Тарас, 29</strong><span>спортивний · 90 хв · ★★★★★</span></div></figcaption></figure>
+            <figure class="card review swiper-slide"><blockquote>«SPA для двох — найкращий подарунок чоловікові за 5 років. Джакузі, чай, тиша. Плакали від щастя.»</blockquote><figcaption><img src="assets/img/gallery-room.jpg" alt="" width="80" height="80" loading="lazy"><div><strong>Ольга і Дмитро</strong><span>ритуал для двох · ★★★★★</span></div></figcaption></figure>
+            <figure class="card review swiper-slide"><blockquote>«Букальний у Діани — це магія. Овал підтягнувся, набряки зникли. Косметолог запитала, що я вколола.»</blockquote><figcaption><img src="assets/img/master-diana.jpg" alt="" width="80" height="80" loading="lazy"><div><strong>Марія, 41</strong><span>масаж обличчя · ★★★★★</span></div></figcaption></figure>
+            <figure class="card review swiper-slide"><blockquote>«Чисто, вчасно, тепло. Адміністратор нагадала про візит і запропонувала чай з собою. Дрібниці вирішують.»</blockquote><figcaption><img src="assets/img/master-andriy.jpg" alt="" width="80" height="80" loading="lazy"><div><strong>Андрій, 52</strong><span>стоун-терапія · ★★★★☆</span></div></figcaption></figure>
+          </div>
+        </div>
+        <div class="dots" id="revDots" role="tablist" aria-label="Сторінки відгуків"></div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section--tint" id="gallery">
+      <div class="container">
+        <div class="section__head"><p class="eyebrow">Атмосфера</p><h2>Загляньте <em>всередину</em></h2><p>Всі фото — наші реальні кабінети: затишок, тепло та спокій з першого кроку.</p></div>
+        <div class="gallery" id="galleryGrid">
+          <button class="g" data-full="Кабінет Бамбук — 18 м², підігрів ліжка, душ" data-src="assets/img/about-interior.jpg"><img src="assets/img/about-interior.jpg" alt="Кабінет Бамбук" width="800" height="600" loading="lazy"><span>Кабінет «Бамбук»</span></button>
+          <button class="g" data-full="Парний люкс — джакузі, дві кушетки, чайна" data-src="assets/img/gallery-room.jpg"><img src="assets/img/gallery-room.jpg" alt="Парний люкс" width="800" height="600" loading="lazy"><span>Парний люкс</span></button>
+          <button class="g" data-full="Чайна зона — карпатські трави, мед, фрукти" data-src="assets/img/about-tea.jpg"><img src="assets/img/about-tea.jpg" alt="Чайна зона" width="800" height="600" loading="lazy"><span>Чайна зона</span></button>
+          <button class="g" data-full="Стоун-терапія — гаряче каміння" data-src="assets/img/gallery-stones.jpg"><img src="assets/img/gallery-stones.jpg" alt="Стоун-терапія" width="800" height="600" loading="lazy"><span>Стоун-терапія</span></button>
+          <button class="g" data-full="Класичний масаж — робота з м'язами спини" data-src="assets/img/gallery-massage.jpg"><img src="assets/img/gallery-massage.jpg" alt="Класичний масаж" width="800" height="600" loading="lazy"><span>Класика</span></button>
+          <button class="g" data-full="Арома-бар — натуральні олії AURA Oil" data-src="assets/img/gallery-oils.jpg"><img src="assets/img/gallery-oils.jpg" alt="Арома-олії" width="800" height="600" loading="lazy"><span>Арома-бар</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container faq__grid">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2>Часті <em>питання</em></h2>
+          <p>Не знайшли відповідь? Зателефонуйте <a class="link" href="tel:+380442345678">+38 (044) 234-56-78</a> — підкажемо чесно.</p>
+          <div class="faq__contact card">
+            <strong>Сумніваєтесь щодо протипоказань?</strong>
+            <p>Напишіть нам у Viber/Telegram — медсестра відповість протягом 15 хв у робочий час.</p>
+            <div class="faq__btns"><a class="btn btn--small btn--dark" href="#booking" data-open-booking>Запитати</a><a class="btn btn--small btn--ghost" href="tel:+380442345678">Подзвонити</a></div>
+          </div>
+        </div>
+        <div class="accordion" id="accordion">
+          <div class="acc is-open"><button class="acc__btn" aria-expanded="true">Чи боляче робити масаж?<span>+</span></button><div class="acc__body"><p>Ні, якщо правильно. Ми завжди уточнюємо комфортний тиск за шкалою 1–10 і працюємо в межах 6–7. Після глибокого сеансу можлива легка крепатура 1 день — це норма.</p></div></div>
+          <div class="acc"><button class="acc__btn" aria-expanded="false">Які є протипоказання?<span>+</span></button><div class="acc__body"><p>Гострі запалення, температура, тромбоз, онкологія в активній фазі, свіжі травми. При вагітності — тільки спеціальний пренатальний масаж після 12 тижня і з дозволу лікаря.</p></div></div>
+          <div class="acc"><button class="acc__btn" aria-expanded="false">Скільки сеансів потрібно?<span>+</span></button><div class="acc__body"><p>Для релаксу достатньо 1 разу на 1–2 тижні. Для спини — курс 5–10 сеансів 2 рази на тиждень. Для обличчя — курс 8–10. Точний план складе майстер після консультації.</p></div></div>
+          <div class="acc"><button class="acc__btn" aria-expanded="false">Що взяти з собою?<span>+</span></button><div class="acc__body"><p>Нічого. Видаємо рушник, одноразову білизну, тапочки, гель для душу, фен. Достатньо прийти за 10 хв до сеансу.</p></div></div>
+          <div class="acc"><button class="acc__btn" aria-expanded="false">Чи можна з подарунковим сертифікатом?<span>+</span></button><div class="acc__body"><p>Так, сертифікат діє 6 місяців на будь-які послуги і не потребує доплат, якщо сума покрита. Можна докупити різницю на місці.</p></div></div>
+          <div class="acc"><button class="acc__btn" aria-expanded="false">Як скасувати або перенести візит?<span>+</span></button><div class="acc__body"><p>Безкоштовно за 6+ годин до візиту — просто відповідайте на SMS або зателефонуйте. При скасуванні менш ніж за 3 години утримується 50% вартості.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section section--dark booking" id="booking">
+      <div class="container booking__grid">
+        <div class="booking__info">
+          <p class="eyebrow eyebrow--light">Онлайн-запис</p>
+          <h2>Запишіться <em>за 30 секунд</em></h2>
+          <p>Залиште заявку — адміністратор передзвонить за 10 хв у робочий час (9:00–21:00) і підтвердить час. Передоплата не потрібна.</p>
+          <ul class="booking__perks">
+            <li>✓ Перший візит −20% з промокодом AURA20</li>
+            <li>✓ Безкоштовне скасування за 6 годин</li>
+            <li>✓ Нагадування SMS + чай у подарунок</li>
+          </ul>
+          <div class="booking__calc card card--light">
+            <strong>Калькулятор вартості</strong>
+            <p id="calcOut">Оберіть послугу у формі — порахуємо ціну з урахуванням знижки першого візиту.</p>
+          </div>
+          <p class="booking__phone">Або просто зателефонуйте: <a href="tel:+380442345678">+38 (044) 234-56-78</a></p>
+        </div>
+        <form class="card card--light form" id="bookForm" novalidate>
+          <h3>Форма запису</h3>
+          <div class="form__row">
+            <label>Ім’я*<input type="text" name="name" placeholder="Як до вас звертатись" autocomplete="name" required></label>
+            <label>Телефон*<input type="tel" name="phone" placeholder="+38 (___) ___-__-__" autocomplete="tel" inputmode="tel" required></label>
+          </div>
+          <div class="form__row">
+            <label>Послуга*<select name="service" id="serviceSelect" required>
+              <option value="">— Оберіть —</option>
+              <option>Класичний масаж · 60 хв — 750 ₴</option>
+              <option>Класичний масаж · 90 хв — 1050 ₴</option>
+              <option>Спортивний масаж — 800 ₴</option>
+              <option>Лімфодренажний масаж — 800 ₴</option>
+              <option>Антицелюлітний масаж — 700 ₴</option>
+              <option>Масаж обличчя — 600 ₴</option>
+              <option>Тайський масаж — 950 ₴</option>
+              <option>Стоун-терапія — 1100 ₴</option>
+              <option>Арома-SPA ритуал — 1400 ₴</option>
+              <option>SPA для двох — 2800 ₴</option>
+              <option>Безкоштовна консультація — 0 ₴</option>
+            </select></label>
+            <label>Майстер<select name="master" id="masterSelect">
+              <option value="">Будь-який вільний</option>
+              <option>Олена Коваль</option>
+              <option>Максим Лисенко</option>
+              <option>Діана Саєнко</option>
+              <option>Андрій Руденко</option>
+            </select></label>
+          </div>
+          <div class="form__row">
+            <label>Дата*<input type="date" name="date" id="dateInput" required></label>
+            <label>Час*<select name="time" required>
+              <option value="">—</option>
+              <option>09:00</option><option>10:30</option><option>12:00</option><option>13:30</option>
+              <option>15:00</option><option>16:30</option><option>18:00</option><option>19:30</option>
+            </select></label>
+          </div>
+          <label class="form__full">Коментар<textarea name="comment" rows="3" placeholder="Наприклад: болить шия справа, алергія на лаванду, хочу тихіший кабінет…"></textarea></label>
+          <label class="form__promo">Промокод<input type="text" name="promo" id="promoInput" placeholder="AURA20"></label>
+          <label class="consent"><input type="checkbox" id="consent" checked required> <span>Погоджуюсь на обробку персональних даних та дзвінок для підтвердження*</span></label>
+          <p class="form__error" id="formError" role="alert" hidden></p>
+          <button class="btn btn--primary btn--full" type="submit">Надіслати заявку</button>
+          <p class="form__hint">Натискаючи кнопку, ви не оплачуєте нічого — лише бронюєте час.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="section" id="contacts">
+      <div class="container contacts__grid">
+        <div>
+          <p class="eyebrow">Контакти</p>
+          <h2>Чекаємо <em>в гості</em></h2>
+          <ul class="contacts__list">
+            <li><strong>Адреса</strong><span>Київ, вул. Затишна, 12 (м. Золоті ворота, 7 хв пішки)</span></li>
+            <li><strong>Телефон</strong><a class="link" href="tel:+380442345678">+38 (044) 234-56-78</a></li>
+            <li><strong>Пошта</strong><a class="link" href="mailto:hello@aura-massage.kyiv.ua">hello@aura-massage.kyiv.ua</a></li>
+            <li><strong>Години</strong><span>Пн–Нд · 9:00–21:00 · без перерви</span></li>
+          </ul>
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor" stroke="none"/></svg></a>
+            <a href="#" aria-label="Telegram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 4 3.5 11.2c-.7.3-.7 1.3.1 1.5l4.4 1.4 1.7 5.3c.3.8 1.3.9 1.8.2l2.4-2.9 4.6 3.3c.6.4 1.4.1 1.6-.6L21.9 5c.2-1-.8-1.7-1.9-1Z"/><path d="M7.9 13.5 21 4l-6.2 13.4-3-4.9-3.9-1.5Z" opacity=".45"/></svg></a>
+            <a href="#" aria-label="Viber"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 16.9v2.6a1.8 1.8 0 0 1-2 1.8c-5.5-.6-9.8-4.9-10.4-10.4a1.8 1.8 0 0 1 1.8-2h2.6a1.8 1.8 0 0 1 1.8 1.5c.1.9.4 1.8.7 2.6a1.8 1.8 0 0 1-.4 1.9l-1.2 1.2c.9 1.9 2.3 3.3 4.2 4.2l1.2-1.2a1.8 1.8 0 0 1 1.9-.4c.8.3 1.7.6 2.6.7a1.8 1.8 0 0 1 1.4 1.5Z"/><path d="M15 5.5a5 5 0 0 1 3.5 3.5M15 2.5a8 8 0 0 1 6.5 6.5"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8.5" cy="17.5" r="3.2"/><path d="M11.7 17.3V6.2c0-.6.5-1 1-.8 2.2.8 3.7 2.6 4.1 4.9"/></svg></a>
+          </div>
+          <div class="contacts__btns">
+            <a class="btn btn--dark" href="#booking" data-open-booking>Записатися</a>
+            <button class="btn btn--ghost" id="routeBtn">Побудувати маршрут</button>
+          </div>
+          <p class="contacts__route" id="routeOut" hidden>Ми біля парку: від м. Золоті ворота — вул. Ярославів Вал → праворуч на Затишну, 12. Вхід з двору, вивіска AURA.</p>
+        </div>
+        <div class="map card" role="img" aria-label="Схематична карта проїзду до салону">
+          <svg viewBox="0 0 520 380" width="100%" height="100%" aria-hidden="true">
+            <rect width="520" height="380" rx="18" fill="#EFE7D7"/>
+            <g stroke="#fff" stroke-width="14"><path d="M0 120H520M0 250H520M140 0V380M340 0V380"/></g>
+            <g stroke="#D9CBB2" stroke-width="2"><path d="M0 120H520M0 250H520M140 0V380M340 0V380"/></g>
+            <rect x="150" y="130" width="180" height="110" rx="10" fill="#DCE5D3"/>
+            <text x="240" y="185" text-anchor="middle" font-size="16" fill="#4A5A40" font-family="sans-serif">парк</text>
+            <g><rect x="350" y="130" width="110" height="70" rx="10" fill="#1E1B16"/><text x="405" y="160" text-anchor="middle" font-size="15" fill="#FBF8F3" font-family="sans-serif">AURA</text><text x="405" y="180" text-anchor="middle" font-size="11" fill="#C9B99C" font-family="sans-serif">Затишна, 12</text></g>
+            <g fill="#C47A5A"><circle cx="405" cy="120" r="9"/><circle cx="405" cy="120" r="16" opacity=".3"/></g>
+            <g font-family="sans-serif" font-size="12" fill="#7A6F5C"><text x="12" y="112">Ярославів Вал</text><text x="12" y="242">Стрілецька</text><text x="148" y="20">Золотоворітська</text></g>
+            <g stroke="#1E1B16" stroke-width="3" stroke-dasharray="8 6" fill="none"><path d="M60 340 140 340 140 250 340 250 340 200 395 200"/></g>
+            <g font-family="sans-serif" font-size="12" fill="#1E1B16"><text x="60" y="360">Ⓜ Золоті ворота</text></g>
+          </svg>
+          <p class="map__cap">Схема проїзду · паркування для гостей безкоштовне (2 місця у дворі)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta__inner">
+        <h2>Подаруйте близьким <em>годину тиші</em></h2>
+        <p>Електронний сертифікат прилетить на пошту за 5 хвилин. Паперовий — вручимо в крафтовому конверті з листівкою.</p>
+        <div class="cta__btns"><a class="btn btn--primary" href="#booking" data-open-booking>Обрати сертифікат</a><a class="btn btn--ghost" href="tel:+380442345678">+38 (044) 234-56-78</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#top" class="logo" aria-label="AURA — на головну">
+          <span class="logo__mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" width="38" height="38"><rect width="64" height="64" rx="20" fill="#4E4237"/><g fill="none" stroke="#F7EFE3" stroke-width="2.5" stroke-linecap="round"><path d="M32 12c-6 8-14 12-14 22a14 14 0 0 0 28 0c0-10-8-14-14-22Z"/><path d="M32 22v18M25 30c2 2 4 3 7 3s5-1 7-3"/></g><circle cx="32" cy="46" r="2.5" fill="#D3A184"/></svg>
+          </span>
+          <span class="logo__text logo__text--footer">AURA<small>студія масажу · Київ</small></span>
+        </a>
+        <p class="footer__small">© 2014–2026 AURA. Всі права захищено.<br>Ліцензія МОЗ № АЕ-123456 · ФОП Коваль О. М.</p>
+      </div>
+      <nav aria-label="Навігація у підвалі">
+        <a href="#services">Послуги</a><a href="#pricing">Ціни</a><a href="#masters">Майстри</a><a href="#faq">Питання</a>
+      </nav>
+      <div class="footer__contacts">
+        <a href="tel:+380442345678">+38 (044) 234-56-78</a>
+        <a href="mailto:hello@aura-massage.kyiv.ua">hello@aura-massage.kyiv.ua</a>
+        <span>Київ, вул. Затишна, 12 · 9:00–21:00</span>
+      </div>
+    </div>
+    <p class="footer__note">Класичний, спортивний, антицелюлітний, лімфодренажний, тайський масаж та SPA-ритуали — студія AURA, Київ.</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox__box" role="dialog" aria-modal="true" aria-label="Перегляд фото салону">
+      <button class="lightbox__close" id="lightboxClose" aria-label="Закрити">✕</button>
+      <img class="lightbox__img" id="lightboxImg" src="assets/img/about-interior.jpg" alt="Фото салону">
+      <p id="lightboxText"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="successModal" hidden>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="lightbox__close" id="modalClose" aria-label="Закрити">✕</button>
+      <p class="eyebrow">Заявку отримано ✓</p>
+      <h3 id="modalTitle">Дякуємо! Чекайте дзвінка</h3>
+      <p id="modalText">Адміністратор підтвердить час протягом 10 хвилин у робочий час.</p>
+      <button class="btn btn--primary btn--full" id="modalOk">Добре, чекаю</button>
+    </div>
+  </div>
+
+  <div class="cookie" id="cookie" hidden>
+    <p>Ми використовуємо cookie, щоб запам'ятати ваші налаштування та зробити запис зручнішим.</p>
+    <button class="btn btn--small btn--dark" id="cookieOk">Зрозуміло</button>
+  </div>
+
+  <button class="totop" id="toTop" aria-label="Догори">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="assets/vendor/swiper/swiper-bundle.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
